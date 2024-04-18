@@ -1,0 +1,461 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/3.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/basketball.svg);
+}
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/3.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/basketball.svg);
+}
+
+
+
+.container-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-cards {
+  margin: auto 0;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 260px;
+  width: 1000px;
+  gap: 16px;
+}
+
+.border {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 13px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+#atlanta {
+  background-image: url(./assets/logo-atlanta.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-color: #fdb927;
+  color: #c8102e;
+  opacity: 0.8;
+}
+
+#boston {
+  background-image: url(./assets/logo-celtics.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #008348;
+  border-color: white;
+  opacity: 0.8;
+}
+
+#brooklyn {
+  background-image: url(./assets/logo-nets.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: rgb(34, 35, 34);
+  border-color: white;
+  opacity: 0.8;
+}
+
+#charlotte {
+  background-image: url(./assets/logo-hornets.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #00abc8;
+  border-color: white;
+  color: #410099;
+  opacity: 0.8;
+}
+
+#chicaco {
+  background-image: url(./assets/logo-bulls.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #cd1141;
+  color: black;
+  border-color: white;
+  opacity: 0.8;
+}
+
+#cleveland {
+  background-image: url(./assets/logo-cleveland.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #600e2c;
+  border-color: #b48b52;
+  color: #b48b52;
+  opacity: 0.8;
+}
+
+#detroit {
+  background-image: url(./assets/logo-pistons.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #002b5c;
+  border-color: #dc1e35;
+  opacity: 0.8;
+}
+
+#indiana {
+  background-image: url(./assets/logo-indiana.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #091f40;
+  border-color: white;
+  color: #fdb525;
+  opacity: 0.8;
+}
+
+#miami {
+  background-image: url(./assets/logo-miami.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: black;
+  border-color: white;
+  color: #98002e;
+  opacity: 0.8;
+}
+
+#milwaukee {
+  background-image: url(./assets/logo-bucks.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #00471c;
+  border-color: white;
+  color: white;
+  opacity: 0.8;
+}
+
+#knicks {
+  background-image: url(./assets/logo-knicks.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-color: #06c;
+  color: #f58426;
+  opacity: 0.8;
+}
+
+#magic {
+  background-image: url(./assets/logo-magic.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #0077c0;
+  border-color: white;
+  color: white;
+  opacity: 0.8;
+}
+
+#sixers {
+  background-image: url(./assets/logo-sixers.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #003da6;
+  border-color: #dd0031;
+  color: white;
+  opacity: 0.8;
+}
+
+#raptors {
+  background-image: url(./assets/logo-raptors.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #000;
+  border-color: #bd1b21;
+  color: #bd1b21;
+  opacity: 0.8;
+}
+
+#wizards {
+  background-image: url(./assets/logo-wizards.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #e31837;
+  border-color: #002b5c;
+  color: white;
+  opacity: 0.8;
+}
+
+#mavericks {
+  background-image: url(./assets/logo-mavericks.svg);
+  background-position: left;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-color: #0268d6;
+  border-color: white;
+  color: white;
+  opacity: 0.8;
+}
+
+#nuggets {
+  background-image: url(./assets/logo-nuggets.svg);
+  background-position: left;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-color: #0e2240;
+  border-color: #8a2432;
+  color: #fec524;
+  opacity: 0.8;
+}
+
+#warriors {
+  background-image: url(./assets/logo-warriors.svg);
+  background-position: left;
+  background-size: 52px;
+  background-repeat: no-repeat;
+  background-color: #1d428a;
+  border-color: #ffc72c;
+  color: #ffc72c;
+  opacity: 0.8;
+}
+
+#rockets {
+  background-image: url(./assets/logo-rockets.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #1e1e23;
+  border-color: #dd2b35;
+  color: #dd2b35;
+  opacity: 0.8;
+}
+
+#clippers {
+  background-image: url(./assets/logo-clippers.svg);
+  background-position: left;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-color: #1d428a;
+  color: white;
+  border-color: #da1a32;
+  opacity: 0.8;
+}
+
+#lakers {
+  background-image: url(./assets/logo-lakers.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #fdb927;
+  border-color: white;
+  color: #31006f;
+  opacity: 0.8;
+}
+
+#grizzlies {
+  background-image: url(./assets/logo-grizzlies.svg);
+  background-position: left;
+  background-size: 49px;
+  background-repeat: no-repeat;
+  background-color: #0c2340;
+  border-color: white;
+  color: #73859f;
+  opacity: 0.8;
+}
+
+#wolves {
+  background-image: url(./assets/logo-wolves.svg);
+  background-position: left;
+  background-size: 37px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-color: #06c;
+  color: #0c233f;
+  opacity: 0.8;
+}
+
+#pelicans {
+  background-image: url(./assets/logo-pelicans.svg);
+  background-position: left;
+  background-size: 49px;
+  background-repeat: no-repeat;
+  background-color: #0f1840;
+  border-color: #8d734a;
+  color: white;
+  opacity: 0.8;
+}
+
+#oklahoma {
+  background-image: url(./assets/logo-thunder.svg);
+  background-position: left;
+  background-size: 49px;
+  background-repeat: no-repeat;
+  background-color: #06c;
+  border-color: #f05033;
+  color: white;
+  opacity: 0.8;
+}
+
+#suns {
+  background-image: url(./assets/logo-suns.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: rgb(60, 40, 110);
+  border-color: #fa4b0a;
+  color: white;
+  opacity: 0.8;
+}
+
+#portland {
+  background-image: url(./assets/logo-blazers.svg);
+  background-position: left;
+  background-size: 49px;
+  background-repeat: no-repeat;
+  background-color: #c8102e;
+  border-color: black;
+  color: black;
+  opacity: 0.8;
+}
+
+#kings {
+  background-image: url(./assets/logo-kings.svg);
+  background-position: left;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-color: #673ab7;
+  border-color: black;
+  color: white;
+  opacity: 0.8;
+}
+
+#spurs {
+  background-image: url(./assets/logo-spurs.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: black;
+  border-color: white;
+  color: white;
+  opacity: 0.8;
+}
+
+#utah {
+  background-image: url(./assets/logo-jazz.svg);
+  background-position: left;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: black;
+  border-color: #ffeb3b;
+  color: #ffeb3b;
+  opacity: 0.8;
+}
+
+body {
+  /*background-image: url(./assets/assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;*/
+
+  background: var(--bg-url) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+#switch button {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  /*-webkit-backdrop-filter: blur(4px);*/
+  border-radius: 9999px;
+}
+
+
+
+img {
+  border-radius: 60px;
+  border: 3px solid gray;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 10px;
+}
